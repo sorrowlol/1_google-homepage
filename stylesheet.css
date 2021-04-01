@@ -1,61 +1,62 @@
 body {
-    text-align:center;
+    text-align: center;
+
 }
 
-#logo {
-    height: 375px;
+.top-bar{
+    display: grid;
+    height: 20px;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: end;
+    margin: 20px;
+}
+
+.logo {
+    height: 322px;
+    margin-bottom: 1.6em;
     display: flex;
     align-items: flex-end;
     justify-content:center;
 }
 
-#search-bar {
-    margin-top:1em;
-
+.search-bar{
+    width:590px;
+    height: 3.5em;
+    border-radius: 25px;
+    margin-bottom: 2.3em;
+    border-style:solid;
+    border-color: #adadad69;
+    border-width:1px;
 }
 
-#search{
-    width: 450px;
-    height: 30px;
-    border-width: 1px;
-    border-radius:20px;
+.search-buttons{
+    text-align: center;
+    margin-bottom: 1.6em;  
 }
 
-#search-menu {
-    margin-top: 1em;
+.button-search{
+    background-color: #e6e6e669;
+    border-style:none;
+    border-radius: 5px;
+    height: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom:0.5em;
+    width:135px;
+    font-size:14px;
+}
+
+.languages{
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    justify-items: center;
-}
-
-#search-button {
-    grid-column-start: 8;
-    grid-column-end: 9;
-    border-radius:20px;
-    border-width:0.2px;
-    border-color:rgba(238, 238, 238, 0.5);
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    font-size:12px;
     font-family:Arial, Helvetica, sans-serif;
-    font-size:small;
-    background-color: rgba(238, 238, 238, 0.5);
-    width: 125px;
-    height: 25px;
-}
-
-#lucky-button {
-    grid-column-start: 9;
-    grid-column-end: 10;
-    border-radius:20px;
-    border-width:0.2px;
-    border-color:rgba(238, 238, 238, 0.5);
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:small;
-    background-color: rgba(238, 238, 238, 0.5);
-    width: 125px;
-}
-
-#Languages {
-    margin-top: 1em;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:small;
-    
+    text-align:center;
+    justify-content: center;
 }
